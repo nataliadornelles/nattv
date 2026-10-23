@@ -70,7 +70,6 @@
                 <!-- Logo -->
                 <a href="#" class="flex items-center space-x-2">
                     <span class="text-2xl sm:text-3xl font-black tracking-tighter text-white">NAT <span class="text-netflix-red">TV</span></span>
-                    <span class="hidden sm:inline-block px-2 py-0.5 text-[10px] font-bold bg-netflix-red/20 text-netflix-red border border-netflix-red/30 rounded">VIP 4K</span>
                 </a>
 
                 <!-- Links Desktop -->
@@ -121,10 +120,6 @@
         <div class="absolute inset-0 bg-gradient-to-t from-netflix-black via-transparent to-netflix-black/60 z-0"></div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-            <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-netflix-surface/80 border border-white/10 text-slate-300 text-xs font-semibold uppercase tracking-widest mb-6 backdrop-blur">
-                <span class="w-2 h-2 rounded-full bg-netflix-red animate-pulse"></span>
-                <span>Servidor Oficial 2026 • Sem Travamentos</span>
-            </div>
             
             <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight leading-none mb-6 max-w-4xl mx-auto">
                 Tudo o que você gosta, em <span class="text-netflix-red drop-shadow-[0_0_25px_rgba(229,9,20,0.5)]">um só lugar.</span>
@@ -434,8 +429,6 @@
                 <p class="text-xs text-slate-400 flex items-center justify-center gap-4 flex-wrap">
                     <span class="flex items-center gap-1.5"><i class="fa-brands fa-pix text-emerald-400"></i> PIX Instantâneo</span>
                     <span>•</span>
-                    <span class="flex items-center gap-1.5"><i class="fa-regular fa-credit-card text-netflix-red"></i> Cartão de Crédito</span>
-                    <span>•</span>
                     <span class="flex items-center gap-1.5"><i class="fa-solid fa-shield text-slate-300"></i> Ativação Segura via WhatsApp</span>
                 </p>
             </div>
@@ -457,6 +450,9 @@
                         </a>
                         <a  href="https://www.youtube.com/@Nat-tv-play" class="w-9 h-9 rounded-lg bg-netflix-surface border border-white/10 flex items-center justify-center text-slate-300 hover:text-white hover:border-netflix-red transition">
                             <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a  href="https://www.instagram.com/nat.tv.play/" class="w-9 h-9 rounded-lg bg-netflix-surface border border-white/10 flex items-center justify-center text-slate-300 hover:text-white hover:border-netflix-red transition">
+                            <i class="fa-brands fa-instagram"></i>
                         </a>
                     </div>
                 </div>
@@ -490,11 +486,14 @@
                                 <p class="text-xs text-slate-400">(11) 99999-0000</p>
                             </div>
                         </li>
+
+
+                        
                         <li class="flex items-center space-x-3">
-                            <i class="fa-regular fa-envelope text-netflix-red text-lg"></i>
+                            <i class="fa-brands fa-instagram text-netflix-red text-lg"></i>
                             <div>
-                                <p class="text-white font-medium">E-mail</p>
-                                <p class="text-xs text-slate-400">suporte@nattv.com.br</p>
+                                <p class="text-white font-medium">Instagram</p>
+                                <p class="text-xs text-slate-400">@nat.tv.play</p>
                             </div>
                         </li>
                     </ul>
@@ -654,7 +653,7 @@
             formFeedback.innerHTML = `<i class="fa-solid fa-circle-check mr-1"></i> Olá <strong>${name}</strong>! Pedido de <strong>${selectedPlanName}</strong> pronto para o app <strong>${device}</strong>.`;
 
             setTimeout(() => {
-                const whatsappNumber = "5511999990000"; // Número para contato
+                const whatsappNumber = "5524999496623"; // Número para contato
                 const text = encodeURIComponent(`Olá! Vim pelo canal do YouTube da NAT TV. Meu nome é ${name} (${phone}). Gostaria de ativar o *${selectedPlanName}* para usar no aplicativo *${device}*.`);
                 window.open(`https://wa.me/${whatsappNumber}?text=${text}`, '_blank');
                 closeModal();
