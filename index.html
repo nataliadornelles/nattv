@@ -173,7 +173,7 @@
             <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4">
                 <div>
                     <h2 class="text-netflix-red font-bold text-xs uppercase tracking-widest mb-1">Tendências ao Vivo</h2>
-                    <h3 class="text-2xl sm:text-3xl font-black text-white">Lançamentos Disponíveis na NAT TV</h3>
+                    <h3 class="text-2xl sm:text-3xl font-black text-white">Lançamentos Disponíveis</h3>
                 </div>
                 <div class="flex items-center space-x-2 text-xs text-slate-400">
                     <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
@@ -377,7 +377,7 @@
                         </ul>
                     </div>
 
-                    <button onclick="selectPlan('Plano Mensal NAT TV', 'R$ 34,90')" class="w-full py-4 rounded-xl font-bold text-white bg-netflix-surface hover:bg-netflix-red transition border border-white/10">
+                    <button onclick="selectPlan('Plano Mensal', 'R$ 34,90')" class="w-full py-4 rounded-xl font-bold text-white bg-netflix-surface hover:bg-netflix-red transition border border-white/10">
                         Assinar Plano Mensal
                     </button>
                 </div>
@@ -409,7 +409,7 @@
                             </li>
                             <li class="flex items-center space-x-3">
                                 <i class="fa-solid fa-circle-check text-netflix-red"></i>
-                                <span>Servidor Prioritário NAT TV 4K</span>
+                                <span>Servidor Prioritário 4K</span>
                             </li>
                             <li class="flex items-center space-x-3">
                                 <i class="fa-solid fa-circle-check text-netflix-red"></i>
@@ -422,7 +422,7 @@
                         </ul>
                     </div>
 
-                    <button onclick="selectPlan('Plano Trimestral NAT TV', 'R$ 84,90')" class="w-full py-4 rounded-xl font-bold text-white bg-netflix-red hover:bg-netflix-darkred transition shadow-lg shadow-netflix-red/30">
+                    <button onclick="selectPlan('Plano Trimestral', 'R$ 84,90')" class="w-full py-4 rounded-xl font-bold text-white bg-netflix-red hover:bg-netflix-darkred transition shadow-lg shadow-netflix-red/30">
                         Assinar Plano Trimestral
                     </button>
                 </div>
@@ -604,14 +604,14 @@
                 }
             } catch (error) {
                 console.error("Erro ao carregar filmes da API:", error);
-                container.innerHTML = `<p class="text-xs text-slate-500 py-4 px-2">Catálogo atualizado com +15.000 títulos disponíveis na NAT TV.</p>`;
+                container.innerHTML = `<p class="text-xs text-slate-500 py-4 px-2">Catálogo atualizado com +15.000 títulos disponíveis.</p>`;
             }
         }
 
         window.addEventListener('DOMContentLoaded', fetchTrendingMovies);
 
         // Modal de Pedidos
-        let selectedPlanName = 'Teste Grátis NAT TV (4 Horas)';
+        let selectedPlanName = 'Teste Grátis (4 Horas)';
         const modal = document.getElementById('checkout-modal');
         const modalTitle = document.getElementById('modal-title');
         const modalSubtitle = document.getElementById('modal-subtitle');
@@ -619,8 +619,8 @@
         const formFeedback = document.getElementById('form-feedback');
 
         function openTrialModal() {
-            selectedPlanName = 'Teste Grátis NAT TV (4 Horas)';
-            modalTitle.textContent = 'Teste Grátis NAT TV (4 Horas)';
+            selectedPlanName = 'Teste Grátis (4 Horas)';
+            modalTitle.textContent = 'Teste Grátis (4 Horas)';
             modalSubtitle.textContent = 'Experimente a grade completa sem compromisso.';
             modalBtnText.textContent = 'Receber Teste no WhatsApp';
             formFeedback.classList.add('hidden');
